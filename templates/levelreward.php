@@ -5,40 +5,13 @@ include_once 'includes/header_scripts.php';
 
 ?>
 </head>
-
-<script>
-	// Uitzetten van f12 bullshit.
-    document.addEventListener('contextmenu', event => event.preventDefault());
- 
-    document.onkeydown = function (e) {
- 
-
-        if(e.keyCode == 123) {
-            return false;
-        }
- 
-
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-            return false;
-        }
-
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-            return false;
-        }
-
-        if(e.ctrlKey && e.keyCode == 85) {
-            return false;
-        }
-    }
- 
-</script>
 <style>
 
-		.reward-container-reward-title-caprihotel {
+		.reward-container-reward-title-websitelevel {
 			text-align: center;
 			
 		}
-		.reward-container-reward-title-caprihotel {
+		.reward-container-reward-title-websitelevel {
 			float: left;
 			padding: 2px;
 			margin: 5px;
@@ -48,7 +21,7 @@ include_once 'includes/header_scripts.php';
 			transition: 0.2s;
 			
 		}
-		.reward-container-reward-title-caprihotel:hover {
+		.reward-container-reward-title-websitelevel:hover {
 			float: left;
 			padding: 2px;
 			margin: 5px;
@@ -62,7 +35,7 @@ include_once 'includes/header_scripts.php';
 <body >
 <?php
 
-		// level Rewards gemaakt door Milan -> Psychology.
+		// level Rewards gemaakt door Milan
 		if(User::userData('ls_experience') < 1000) {
 			$levelShow = 0;
 		} elseif (User::userData('ls_experience') < 2000) {
@@ -241,49 +214,49 @@ include_once 'includes/header_scripts.php';
                                                  <div class="desc"><font color="white">Hier kan je alle pakketten zien die je kan krijgen of mogelijk kan claimen.</font></div>
                                             </div>
                                 <div class="png20" style="height: 470px; position: relative;">
-                                    <div id="reward-container-caprihotel">
+                                    <div id="reward-container-websitelevel">
 									<form method="POST">
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 										<img style="position: absolute;" src="/templates/yada/img/levelprestige/prestige1.gif" width="40">
 											<p><img src="/templates/yada/img/present.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl5 ?>
 											
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 											<p><img src="/templates/yada/img/present2.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl10 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 										<img style="position: absolute;" src="/templates/yada/img/levelprestige/prestige2.gif" width="40">
 											<p><img src="/templates/yada/img/present.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl15 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 											<p><img src="/templates/yada/img/present2.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl20 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 										<img style="position: absolute;" src="/templates/yada/img/levelprestige/prestige3.gif" width="40">
 											<p><img src="/templates/yada/img/present.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl25 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 											<p><img src="/templates/yada/img/present2.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl30 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 										<img style="position: absolute;" src="/templates/yada/img/levelprestige/prestige4.gif" width="40">
 											<p><img src="/templates/yada/img/present.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl35 ?>
 										</div>
-										<div class="reward-container-reward-title-caprihotel">
+										<div class="reward-container-reward-title-websitelevel">
 											<p><img src="/templates/yada/img/present2.gif" width="80"></p>
 											<p><?php echo $config['diamondTen']?> Diamanten</p>
 											<?php echo $buttonlvl40 ?>
