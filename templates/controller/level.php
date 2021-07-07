@@ -147,4 +147,9 @@
 				} 
 		}
 	}
+	
+	$levelSystem = new LevelConfiguration();
+	$levelSystem->buttonHandler();
+	$levelSystem->levelPreview();
+	$levelSystem->PrestigePreview();
 		?>

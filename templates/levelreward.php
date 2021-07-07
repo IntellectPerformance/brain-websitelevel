@@ -5,6 +5,7 @@ include_once 'includes/header_scripts.php';
 
 ?>
 </head>
+<?php include 'controller/level.php'; ?>
 <style>
 
 		.reward-container-reward-title-websitelevel {
@@ -33,8 +34,6 @@ include_once 'includes/header_scripts.php';
 		
 		</style>
 <body >
-
-	<?php include 'controller/level.php'; ?>
 
 <div class="container">
 	<div class="row">
