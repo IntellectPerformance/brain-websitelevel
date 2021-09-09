@@ -11,9 +11,9 @@ $config['diamondEvent'] = false;
 
 if ($config['diamondEvent'] == true) 
 {
-    $config['diamondTen']	= "20";
+    $config['diamondTen'] = "20";
 } 
 else 
 {
-    $config['diamondTen']	= "10";
+    $config['diamondTen'] = "10";
 }
