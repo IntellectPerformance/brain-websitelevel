@@ -1,3 +1,7 @@
+# Warning!!
+ Re-writing the code right now, there could be bugs and further problems. <br>
+ If you encounter some don't hesitate to send me a friend-request on Discord: Mildrano-#9281
+
 # BrainCMS New Feature 
  Use this website feature as an extra reason to chat when using the ArpyAge LevelSystem Plugin. <br>
  You can claim diamonds on the website for having a certain specific level inside the hotel.
