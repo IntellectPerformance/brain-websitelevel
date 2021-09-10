@@ -1,63 +1,64 @@
 <?php
-	class LevelConfiguration 
+
+class LevelConfiguration 
+{
+
+        public static $userLevel = User::userData('ls_experience');
+
+	function levelPreview() 
 	{
-
-        public $userLevel = User::userData('ls_experience');
-
-		function levelPreview() 
-		{
             
             switch (true) {
 
-                case $userLevel <= 1000:
+                case Self::$userLevel < 1000:
                     $levelShow = 0;
                     break;
             
-                case $userLevel <= 2000:
+                case Self::$userLevel <= 2000:
                     $levelShow = 1;
                     break;
             
-                case $userLevel <= 3000:
+                case Self::$userLevel <= 3000:
                     $levelShow = 2;
                     break;
 
-                case $userLevel <= 4000:
+                case Self::$userLevel <= 4000:
                     $levelShow = 3;
                     break;
                     
-                case $userLevel <= 5000:
+                case Self::$userLevel <= 5000:
                     $levelShow = 4;
                     break;
                 
-                case $userLevel <= 6000:
+                case Self::$userLevel <= 6000:
                     $levelShow = 5;
                     break;
 
-                case $userLevel <= 7000:
+                case Self::$userLevel <= 7000:
                     $levelShow = 6;
                     break;
 
-                case $userLevel <= 8000:
+                case Self::$userLevel <= 8000:
                     $levelShow = 7;
                     break;
 
-                case $userLevel <= 9000:
+                case Self::$userLevel <= 9000:
                     $levelShow = 8;
                     break;
 
-                case $userLevel <= 10000:
+                case Self::$userLevel <= 10000:
                     $levelShow = 9;
                     break;
 
-                case $userLevel <= 11000:
+                case Self::$userLevel <= 11000:
                     $levelShow = 10;
                     break;
 
-	 	default:
+		        default:
                     $levelShow = "You've reached the max level.";
                     break;
-            }
-		}
+           }
+	}
 		
 		function buttonHandler() 
 		{
@@ -168,4 +169,4 @@
 	$levelSystem->buttonHandler();
 	$levelSystem->levelPreview();
 	$levelSystem->PrestigePreview();
-		?>
+?>
