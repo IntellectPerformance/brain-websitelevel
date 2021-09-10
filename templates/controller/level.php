@@ -54,7 +54,7 @@ class LevelConfiguration
                     $levelShow = 10;
                     break;
 
-		        default:
+		default:
                     $levelShow = "You've reached the max level.";
                     break;
            }
