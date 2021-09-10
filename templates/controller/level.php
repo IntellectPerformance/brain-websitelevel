@@ -1,46 +1,62 @@
 <?php
 	class LevelConfiguration 
 	{
+
+        public $userLevel = User::userData('ls_experience');
+
 		function levelPreview() 
 		{
-		// level Rewards gemaakt door Milan
-			if(User::userData('ls_experience') < 1000) {
-				$levelShow = 0;
-			} elseif (User::userData('ls_experience') < 2000) {
-				$levelShow = 1;
-			} elseif (User::userData('ls_experience') < 3000) {
-				$levelShow = 2;
-			} elseif (User::userData('ls_experience') < 4000) {
-				$levelShow = 3;
-			} elseif (User::userData('ls_experience') < 5000) {
-				$levelShow = 4;
-			} elseif (User::userData('ls_experience') < 6000) {
-				$levelShow = 5;
-			} elseif (User::userData('ls_experience') < 7000) {
-				$levelShow = 6;
-			} elseif (User::userData('ls_experience') < 8000) {
-				$levelShow = 7;
-			} elseif (User::userData('ls_experience') < 9000) {
-				$levelShow = 8;
-			} elseif (User::userData('ls_experience') < 10000) {
-				$levelShow = 9;
-			} elseif (User::userData('ls_experience') < 11000) {
-				$levelShow = 10;
-			} elseif (User::userData('ls_experience') < 12000) {
-				$levelShow = 11;
-			} elseif (User::userData('ls_experience') < 13000) {
-				$levelShow = 12;
-			} elseif (User::userData('ls_experience') < 14000) {
-				$levelShow = 13;
-			} elseif (User::userData('ls_experience') < 15000) {
-				$levelShow = 14;
-			} elseif (User::userData('ls_experience') < 16000) {
-				$levelShow = 15;
-			} elseif (User::userData('ls_experience') < 17000) {
-				$levelShow = 16;
-			} elseif (User::userData('ls_experience') < 18000) {
-				$levelShow = 17;
-			}
+            
+            switch (true) {
+
+                case $userLevel <= 1000:
+                    $levelShow = 0;
+                    break;
+            
+                case $userLevel <= 2000:
+                    $levelShow = 1;
+                    break;
+            
+                case $userLevel <= 3000:
+                    $levelShow = 2;
+                    break;
+
+                case $userLevel <= 4000:
+                    $levelShow = 3;
+                    break;
+                    
+                case $userLevel <= 5000:
+                    $levelShow = 4;
+                    break;
+                
+                case $userLevel <= 6000:
+                    $levelShow = 5;
+                    break;
+
+                case $userLevel <= 7000:
+                    $levelShow = 6;
+                    break;
+
+                case $userLevel <= 8000:
+                    $levelShow = 7;
+                    break;
+
+                case $userLevel <= 9000:
+                    $levelShow = 8;
+                    break;
+
+                case $userLevel <= 10000:
+                    $levelShow = 9;
+                    break;
+
+                case $userLevel <= 11000:
+                    $levelShow = 10;
+                    break;
+
+		        default:
+                    $levelShow = "You've reached the max level.";
+                    break;
+            }
 		}
 		
 		function buttonHandler() 
